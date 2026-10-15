@@ -31,7 +31,7 @@ export default class UpdateDepartamento extends Component {
 
     render() {
         return (
-            <div style={{margin:'auto', width: '50%'}}>
+            <div style={{margin:'auto', width: '60%'}}>
                 {
                     this.state.status == true &&
                     <Navigate to='/'/>

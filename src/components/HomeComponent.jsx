@@ -20,6 +20,12 @@ export default class HomeComponent extends Component {
         })
     }
 
+    /*deleteDepartamento = (idDepartamento) => {
+        this.service.deleteDepartamentos(idDepartamento).then(result => {
+            this.loadDepartamentos()
+        })
+    }*/
+
     componentDidMount = () => {
         this.loadDepartamentos()
     }
@@ -27,13 +33,14 @@ export default class HomeComponent extends Component {
     render() {
         if (this.state.status == true){
             return (
-            <div style={{margin:'auto', width: '50%'}}>
+            <div style={{margin:'auto', width: '60%'}}>
                 <h1>Home Component</h1>
                 <table className='table table-info'>
                     <thead>
                         <tr>
                             <th>Nombre</th>
                             <th>Localidad</th>
+                            <th></th>
                             <th></th>
                         </tr>
                     </thead>
@@ -51,6 +58,23 @@ export default class HomeComponent extends Component {
                                         }>
                                             Edit
                                         </NavLink>
+                                    </td>
+                                    <td>
+                                        <NavLink className='btn btn-danger'
+                                        to={"/delete/" + dept.numero
+                                            + "/" + dept.nombre
+                                            + "/" + dept.localidad
+                                        }>
+                                            Borrar
+                                        </NavLink>
+                                        {/*<button className='btn btn-danger'
+                                        // Al llamar metodos de accion en lambda
+                                        // sino se refresca y ejecuta 
+                                        onClick={() => {
+                                            this.deleteDepartamento(dept.numero)
+                                        }}>
+                                            Borrar
+                                        </button>*/}
                                     </td>
                                 </tr>)
                             })
