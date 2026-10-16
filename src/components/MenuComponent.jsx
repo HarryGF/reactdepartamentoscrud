@@ -21,7 +21,7 @@ export default class MenuComponent extends Component {
                         <NavLink className="nav-link active" aria-current="page" to="/create">Crear</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
+                        <NavLink className="nav-link" to="/hospitales">Hospitales</NavLink>
                     </li>
                     <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

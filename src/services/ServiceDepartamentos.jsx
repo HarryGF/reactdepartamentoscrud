@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Global from '../../Global';
+import Global from '../Global';
 
 export default class ServiceDepartamentos {
     getDepartamentos() {

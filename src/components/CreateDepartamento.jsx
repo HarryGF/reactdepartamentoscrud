@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ServiceDepartamentos from './services/ServiceDepartamentos'
+import ServiceDepartamentos from '../services/ServiceDepartamentos'
 import loading from './../assets/images/loading.gif';
 import { Navigate } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import loading from './../assets/images/loading.gif';
-import ServiceDepartamentos from './services/ServiceDepartamentos';
+import ServiceDepartamentos from '../services/ServiceDepartamentos';
 import { NavLink } from 'react-router-dom';
 
 export default class HomeComponent extends Component {
@@ -67,14 +67,6 @@ export default class HomeComponent extends Component {
                                         }>
                                             Borrar
                                         </NavLink>
-                                        {/*<button className='btn btn-danger'
-                                        // Al llamar metodos de accion en lambda
-                                        // sino se refresca y ejecuta 
-                                        onClick={() => {
-                                            this.deleteDepartamento(dept.numero)
-                                        }}>
-                                            Borrar
-                                        </button>*/}
                                     </td>
                                 </tr>)
                             })

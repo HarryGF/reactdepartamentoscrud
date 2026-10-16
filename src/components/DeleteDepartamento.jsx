@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HomeComponent from './HomeComponent'
 import { Navigate } from 'react-router-dom'
-import ServiceDepartamentos from './services/ServiceDepartamentos'
+import ServiceDepartamentos from '../services/ServiceDepartamentos'
 
 export default class DeleteDepartamento extends Component {
 
@@ -29,7 +29,7 @@ export default class DeleteDepartamento extends Component {
             <div style={{margin:'auto', width: '60%'}}>
                 {
                     this.state.status == true &&
-                    <Navigate to='/:true'/>
+                    <Navigate to='/'/>
                 }
                 <h1>Estas seguro que quieres borrar este componente?</h1>
                 <table className='table table-info'>
